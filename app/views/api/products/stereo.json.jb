@@ -1,1 +1,5 @@
-@receiver
+{
+  id: @receiver.id,
+  name: @receiver.name,
+  description: @receiver.description,
+}
