@@ -1,5 +1,7 @@
 {
   id: @turntable.id,
   name: @turntable.name,
+  price: @turntable.price,
+  image_path: @turntable.image_path,
   description: @turntable.description,
 }

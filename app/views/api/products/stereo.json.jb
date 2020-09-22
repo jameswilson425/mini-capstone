@@ -1,5 +1,7 @@
 {
   id: @receiver.id,
   name: @receiver.name,
+  price: @receiver.price,
+  image_path: @receiver.image_path,
   description: @receiver.description,
 }

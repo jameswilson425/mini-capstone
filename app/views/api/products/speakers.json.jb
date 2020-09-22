@@ -1,5 +1,7 @@
 {
   id: @speakers.id,
   name: @speakers.name,
+  price: @speakers.price,
+  image_path: @speakers.image_path,
   description: @speakers.description,
 }
