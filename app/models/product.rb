@@ -11,6 +11,7 @@ class Product < ApplicationRecord
   #   Supplier.find_by(id: supplier_id)
   # end
   has_many :images
+  has_many :orders
 
   # class method
   scope :title_search, ->(search_term) { where("name iLIKE ?", "%#{search_term}%") }
