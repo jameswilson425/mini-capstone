@@ -27,6 +27,11 @@ class Api::ProductsController < ApplicationController
       .discounted(params[:discount])
       .sorted(params[:sort], params[:sort_order])
 
+    if params[:category]
+      category = Category.find_by(name: params[:category])
+      @products = category.products
+    end
+
     render "index.json.jb"
   end
 

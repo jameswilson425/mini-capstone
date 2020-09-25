@@ -12,6 +12,8 @@ class Product < ApplicationRecord
   # end
   has_many :images
   has_many :orders
+  has_many :product_categories
+  has_many :categories, through: :product_categories
 
   # class method
   scope :title_search, ->(search_term) { where("name iLIKE ?", "%#{search_term}%") }
@@ -39,3 +41,17 @@ class Product < ApplicationRecord
     price + tax
   end
 end
+
+#^^^^# def categories
+#   product_categories.map do |handshake|
+#     handshake.category
+#   end
+# end LAST HAS MANY
+
+#_____________________
+#CATEGORY.RB
+# def products
+#   product_categories.map do |handshake|
+#     handshake.product
+#   end
+# end
