@@ -1,2 +1,0 @@
-# expample input:
-# expected output:
